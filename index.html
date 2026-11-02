@@ -110,8 +110,10 @@ body::before{
 .stack{position:relative}
 .stack::before{
   content:"";position:absolute;top:-9px;left:9px;right:-9px;bottom:9px;
-  background:linear-gradient(var(--win-lo) 0 22px, rgba(201,199,222,.35) 22px);
-  border:2px solid rgba(255,255,255,.35);
+  background:
+    linear-gradient(90deg,var(--win-lo),var(--win-hi)) 3px 3px/calc(100% - 6px) 22px no-repeat,
+    var(--win);
+  border:2px solid;border-color:var(--win-hi) var(--win-dk) var(--win-dk) var(--win-hi);
 }
 
 /* Win95 window */
